@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Gtk-doc by Distrotech</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Gtk-doc</h1>
+          <h2>Mirror of git://git.gnome.org/gtk-doc</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/Distrotech/gtk-doc/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/Distrotech/gtk-doc/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/Distrotech/gtk-doc" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="gtk-docbook-documentation-generator" class="anchor" href="#gtk-docbook-documentation-generator"><span class="octicon octicon-link"></span></a>GTK+ DocBook Documentation Generator</h1>
+
+<p>GTK-Doc is used to document C code. It is typically used to document the public
+API of libraries, such as the GTK+ and GNOME libraries, but it can also be
+used to document application code.</p>
+
+<p>Note that GTK-Doc wasn't originally intended to be a general-purpose
+documentation tool, so it can be a bit awkward to setup and use.
+For a more polished general-purpose documentation tool you may want to look
+at Doxygen (<a href="http://www.doxygen.org/">http://www.doxygen.org/</a>). However GTK-Doc has some special code
+to document the signals and properties of GTK+ widgets and GObject classes
+which other tools may not have.</p>
+
+<p>GTK-Doc allows your documentation to be written in 2 ways:
+  a) Embedded inside the source code in specially-formatted comments.
+ or
+  b) Added to the 'template' files which gtk-doc outputs after scanning all
+     the header files and parsing the declarations (deprecated now).</p>
+
+<p>From these source code comments and template files GTK-Doc generates a Docbook
+XML (or SGML) document, which is then transformed into HTML.
+The generated HTML documentation can be browsed in an ordinary web browser or
+by using the special Devhelp API browser
+(see <a href="http://developer.imendio.com/wiki/Devhelp">http://developer.imendio.com/wiki/Devhelp</a>).</p>
+
+<p>Please don't use template files in new projects. Support for for those will
+be removed at some point in the future (together with gtkdoc-mktmpl). Please
+also use DoxBook XML instead of DocBook SGML. </p>
+
+<h1>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h1>
+
+<p>Perl v5 - the main scripts are in Perl.
+    <a href="http://www.perl.com/">http://www.perl.com/</a></p>
+
+<p>For XML output (recommended):</p>
+
+<p>The DocBook XML DTD.
+    <a href="http://www.oasis-open.org/docbook/">http://www.oasis-open.org/docbook/</a></p>
+
+<p>The DocBook XSL Stylesheets.
+    <a href="http://docbook.sourceforge.net/projects/xsl/">http://docbook.sourceforge.net/projects/xsl/</a></p>
+
+<p>libxslt &amp; libxml2 &gt;= 2.3.6.
+    <a href="http://xmlsoft.org/">http://xmlsoft.org/</a></p>
+
+<p>For SGML output (not actively maintained any more):</p>
+
+<p>The DocBook SGML DTD.
+    <a href="http://www.oasis-open.org/docbook/">http://www.oasis-open.org/docbook/</a></p>
+
+<p>Jade v1.1 or OpenJade 1.3.1.
+    <a href="http://www.jclark.com/jade">http://www.jclark.com/jade</a>
+    <a href="http://sourceforge.net/projects/openjade">http://sourceforge.net/projects/openjade</a></p>
+
+<p>The DocBook DSSSL Stylesheets (I've got 1.40, but v1.19+ may be OK).
+    I've customized the DSSSL code slightly, in gtk-doc.dsl, to colour
+    the program code listings/declarations, and to support global
+    cross-reference indices in the generated HTML.
+    <a href="http://docbook.sourceforge.net/projects/dsssl/">http://docbook.sourceforge.net/projects/dsssl/</a></p>
+
+<p>Most distributions now have packages for all of these, so I would strongly
+advise that you grab those.</p>
+
+<p>See the documentation in the help/manual directory for more information. You can
+read it e.g. with yelp file://$PWD/help/manual/C/gtk-doc-manual.xml</p>
+        </section>
+
+        <footer>
+          Gtk-doc is maintained by <a href="https://github.com/Distrotech">Distrotech</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
